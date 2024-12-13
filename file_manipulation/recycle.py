@@ -32,8 +32,8 @@ with safety checks and progress feedback.
 '''
 
 #!global
-from colorama import init, Style
 from typing import Tuple, List
+from colorama import Style
 from pathlib import Path
 import platform
 import argparse
@@ -265,8 +265,6 @@ def main() -> None:
         $ python recycle.py -i
         -----------------------
     '''
-
-    init(autoreset=True)  # initialize colorama
 
     parser = argparse.ArgumentParser(description='Manage system recycle bin')
     

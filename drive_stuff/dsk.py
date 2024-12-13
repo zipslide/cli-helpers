@@ -33,8 +33,8 @@ and color-coded warnings.
 '''
 
 #!global
-from colorama import init, Fore, Style
 from typing import List, Optional
+from colorama import Fore, Style
 from pathlib import Path
 import platform
 import argparse
@@ -240,8 +240,6 @@ def main() -> None:
         ----------------------
     '''
 
-    init(autoreset=True)
-    
     parser = argparse.ArgumentParser(description='Display drive space information')
     parser.add_argument('-all', action='store_true', 
                        help='Show information for all available drives')
