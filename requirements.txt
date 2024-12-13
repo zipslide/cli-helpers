@@ -1,0 +1,1 @@
+colorama   # reference: all files | this is for coloring in the console.
